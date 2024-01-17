@@ -351,6 +351,7 @@ function move_corner_animation(scene_item)
             -- Restart the bouncing
             active = true
             corner_active = false
+            obs.remove_current_callback()
         end, 13000)
     end
 end
